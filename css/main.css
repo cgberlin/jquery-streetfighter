@@ -33,15 +33,15 @@ body {
 }
 
 .ryu-ready, .hulk-ready {
-	background-image:url('../images/ryu-ready-position.gif');
+	background-image:url('../ryu-ready-position.gif');
 }
 
 .ryu-still, .hulk-still {
-	background-image:url('../images/ryu-standing-still.png');
+	background-image:url('../ryu-standing-still.png');
 }
 
 .ryu-throwing, .hulk-throwing {
-	background-image:url('../images/ryu-throwing-hadouken.png');
+	background-image:url('../ryu-throwing-hadouken.png');
 }
 
 .ryu-cool, .hulk-cool {
@@ -52,7 +52,7 @@ body {
 	background-repeat:no-repeat;
 }
 .hadouken {
-	background-image: url('../images/hadouken.gif');
+	background-image: url('../hadouken.gif');
 	width:156px;
 	height:90px;
 	display:none;
@@ -82,7 +82,7 @@ body {
 
 
 .hulk-hadouken {
-	background-image: url('../images/hadouken.gif');
+	background-image: url('../hadouken.gif');
 	width:156px;
 	height:90px;
 	display:none;
@@ -126,7 +126,7 @@ body {
 	z-index:15;
 	position:absolute;
 	display:none;
-	background-image:url('../images/street-fighter-logo.gif');
+	background-image:url('../street-fighter-logo.gif');
 	height:200px;
 	width:380px;
 	margin-left:696px;
