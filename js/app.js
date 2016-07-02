@@ -83,17 +83,17 @@ $(document).ready(function() {
 
   	});
 
+  $('.streetfighter-logo').fadeIn(2000);
+  $('.streetfighter-logo').delay(1000).fadeOut(2000);
 
-
-
-
-
-
-
-
-
-
+  $('.my-name').delay(5000).fadeIn(2000);
+  $('.my-name').delay(1000).fadeOut(2000);
 });
+
+
+
+
+
 
 function playHadouken () {
   $('#hadouken-sound')[0].volume = 0.5;
