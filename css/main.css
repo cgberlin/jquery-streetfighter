@@ -37,7 +37,7 @@ body {
 }
 
 .ryu-still, .hulk-still {
-	background-image:url('./images/ryu-standing-still.png');
+	background-image:url('../images/ryu-standing-still.png');
 }
 
 .ryu-throwing, .hulk-throwing {
@@ -82,7 +82,7 @@ body {
 
 
 .hulk-hadouken {
-	background-image: url('./hadouken.gif');
+	background-image: url('../images/hadouken.gif');
 	width:156px;
 	height:90px;
 	display:none;
