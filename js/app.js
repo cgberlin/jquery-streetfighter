@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  
+  var state = 'ryu-ready';
   
 
 
