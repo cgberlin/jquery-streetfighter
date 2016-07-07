@@ -45,7 +45,7 @@ body {
 }
 
 .ryu-cool, .hulk-cool {
-	background-image:url('./images/ryu-cool.gif');
+	background-image:url('../images/ryu-cool.gif');
 }
 
 .ryu-cool, .hadouken, .ryu-ready, .ryu-still, .ryu-throwing, .hulk-cool, .hulk-still, .hulk-throwing, .hulk-ready, .streetfighter-logo {
@@ -126,7 +126,7 @@ body {
 	z-index:15;
 	position:absolute;
 	display:none;
-	background-image:url('./images/street-fighter-logo.gif');
+	background-image:url('../images/street-fighter-logo.gif');
 	height:200px;
 	width:380px;
 	margin-left:696px;
