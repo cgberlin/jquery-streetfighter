@@ -1,4 +1,8 @@
 $(document).ready(function() {
+  var state = 'ryu-ready';
+  
+
+
   $('.ryu').mouseenter(function() {
     $('.ryu-still').hide();
     $('.ryu-ready').show();

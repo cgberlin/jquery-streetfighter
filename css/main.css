@@ -151,3 +151,21 @@ body {
 	display:none;
 	
 }
+
+@media screen and (max-width:1400px) {
+	.streetfighter-logo{
+		margin-left:510px;
+	}
+
+	.my-name {
+		margin-left:580px;
+	}
+
+	.instruction {
+		margin-left:540px;
+	}
+
+	.hulk-ryu {
+		width:400px;
+	}
+}
