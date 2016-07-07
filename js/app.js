@@ -1,19 +1,20 @@
 $(document).ready(function() {
-  var state = 'ryu-ready';
+  var ryu = '.ryu div'
+  var hulk = '.hulk-ryu div'
   
 
 
   $('.ryu').mouseenter(function() {
-    $('.ryu-still').hide();
+    $(ryu).hide();
     $('.ryu-ready').show();
   })
   .mouseleave(function() {
-  	$('.ryu-ready').hide();
+  	$(ryu).hide();
   	$('.ryu-still').show();
   })
   .mousedown(function(){
   	playHadouken();
-  	$('.ryu-ready').hide();
+  	$(ryu).hide();
   	$('.ryu-throwing').show();
   	$('.hadouken').finish().show().animate(
   		{'left':'1020px'},
@@ -25,20 +26,18 @@ $(document).ready(function() {
   		);
   })
   .mouseup(function(){
-  	$('.hadouken').hide();
-  	$('.ryu-throwing').hide();
+  	$(ryu).hide();
   	$('.ryu-ready').show();
   });
   $(window).keydown(function (e) {
   		if (e.keyCode == 88) {
-  			$('.ryu-still').hide();
-  			$('.ryu-ready').hide();
+  			$(ryu).hide();
   			$('.ryu-cool').show();
   		}
   })
   .keyup(function (e) {
   		if (e.keyCode == 88) {
-  			$('.ryu-cool').hide();
+  			$(ryu).hide();
   			$('.ryu-still').show();
   		}
 
@@ -47,16 +46,16 @@ $(document).ready(function() {
 
 
  $('.hulk-ryu').mouseenter(function() {
-    $('.hulk-still').hide();
+    $(hulk).hide();
     $('.hulk-ready').show();
   })
   .mouseleave(function() {
-  	$('.hulk-ready').hide();
+  	$(hulk).hide();
   	$('.hulk-still').show();
   })
   .mousedown(function(){
   	playHadouken();
-  	$('.hulk-ready').hide();
+  	$(hulk).hide();
   	$('.hulk-throwing').show();
   	$('.hulk-hadouken').finish().show().animate(
   		{'right':'900px'},
@@ -68,20 +67,20 @@ $(document).ready(function() {
   		);
   })
   .mouseup(function(){
-  	$('.hulk-hadouken').hide();
-  	$('.hulk-throwing').hide();
+  	$(hulk).hide();
+  	
   	$('.hulk-ready').show();
   });
   $(window).keydown(function (e) {
   		if (e.keyCode == 88) {
-  			$('.hulk-still').hide();
-  			$('.hulk-ready').hide();
+  			$(hulk).hide();
+  			
   			$('.hulk-cool').show();
   		}
   })
   .keyup(function (e) {
   		if (e.keyCode == 88) {
-  			$('.hulk-cool').hide();
+  			$(hulk).hide();
   			$('.hulk-still').show();
   		}
 
