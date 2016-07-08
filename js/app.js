@@ -1,20 +1,43 @@
 $(document).ready(function() {
-  var ryu = '.ryu div'
-  var hulk = '.hulk-ryu div'
+
+function hideAllRyuStates() {
+  $('.ryu-cool, .hadouken, .ryu-ready, .ryu-still, .ryu-throwing').css("display", "none");
+} 
+
+function hideAllHulkStates() {
+  $('.hulk-cool, .hulk-still, .hulk-throwing, .hulk-ready, .hulk-hadouken').css('display', 'none')
+}
+
+function showHulkReady() {
+  $('.hulk-ready').show();
+}
+
+function showHulkStill() {
+  $('.hulk-still').show();
+}
+
+function showRyuReady() {
+  $('.ryu-ready').show();
+}
+
+function showRyuStill() {
+  $('.ryu-still').show();
+}
+
   
 
 
   $('.ryu').mouseenter(function() {
-    $(ryu).hide();
-    $('.ryu-ready').show();
+    hideAllRyuStates();
+    showRyuReady()
   })
   .mouseleave(function() {
-  	$(ryu).hide();
-  	$('.ryu-still').show();
+  	hideAllRyuStates()
+  	showRyuStill()
   })
   .mousedown(function(){
   	playHadouken();
-  	$(ryu).hide();
+  	hideAllRyuStates();
   	$('.ryu-throwing').show();
   	$('.hadouken').finish().show().animate(
   		{'left':'1020px'},
@@ -26,19 +49,19 @@ $(document).ready(function() {
   		);
   })
   .mouseup(function(){
-  	$(ryu).hide();
-  	$('.ryu-ready').show();
+  	hideAllRyuStates();
+  	showRyuReady()
   });
   $(window).keydown(function (e) {
   		if (e.keyCode == 88) {
-  			$(ryu).hide();
+  			hideAllRyuStates();
   			$('.ryu-cool').show();
   		}
   })
   .keyup(function (e) {
   		if (e.keyCode == 88) {
-  			$(ryu).hide();
-  			$('.ryu-still').show();
+  			hideAllRyuStates();
+  			showRyuStill()
   		}
 
   	});
@@ -46,16 +69,16 @@ $(document).ready(function() {
 
 
  $('.hulk-ryu').mouseenter(function() {
-    $(hulk).hide();
-    $('.hulk-ready').show();
+    hideAllHulkStates();
+    showHulkReady();
   })
   .mouseleave(function() {
-  	$(hulk).hide();
-  	$('.hulk-still').show();
+  	hideAllHulkStates();
+  	showHulkStill()
   })
   .mousedown(function(){
   	playHadouken();
-  	$(hulk).hide();
+  	hideAllHulkStates();
   	$('.hulk-throwing').show();
   	$('.hulk-hadouken').finish().show().animate(
   		{'right':'900px'},
@@ -67,30 +90,28 @@ $(document).ready(function() {
   		);
   })
   .mouseup(function(){
-  	$(hulk).hide();
-  	
-  	$('.hulk-ready').show();
+  	hideAllHulkStates();
+  	showHulkReady();
   });
   $(window).keydown(function (e) {
   		if (e.keyCode == 88) {
-  			$(hulk).hide();
-  			
+  			hideAllHulkStates();
   			$('.hulk-cool').show();
   		}
   })
   .keyup(function (e) {
   		if (e.keyCode == 88) {
-  			$(hulk).hide();
-  			$('.hulk-still').show();
+  			hideAllHulkStates();
+  			showHulkStill()
   		}
 
   	});
 
-  $('.streetfighter-logo').fadeIn(2000);
-  $('.streetfighter-logo').delay(1000).fadeOut(2000);
+  $('.streetfighter-logo').fadeIn(2000).delay(1000).fadeOut(2000);
+  
 
-  $('.my-name').delay(5000).fadeIn(2000);
-  $('.my-name').delay(1000).fadeOut(2000);
+  $('.my-name').delay(5000).fadeIn(2000).delay(1000).fadeOut(2000);
+  
 });
 
 
